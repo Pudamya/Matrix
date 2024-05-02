@@ -13,19 +13,16 @@ def m_size():
                     
         print()
     
-
-           
-                  
-
-
 while True:
     #Get the variables from the user
     size=str(input("Type matrix size (2x2 to 9x9) only: "))
-    
+
+    #Checking whether user inserts  the valid matrix size
     if len(size)==3 and int(size[0])>1 and int(size[0])<10 and int(size[2])>1 and int(size[2])<10:
         matrix=[]
         row=int(size[0])
         column=int(size[2])
+        #Calling m_size function
         m_size()
 
         print("Matrix size : ",size)
@@ -44,6 +41,7 @@ while True:
 
         print()
 
+        #Taking user inputs to multiply the matrix by a number
         multiply=int(input("Type a value to multiply the matrix : "))
         print()
         m=[]
